@@ -1,0 +1,15 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Hugo SSG with NPM
+theme: ["PaperMod"]
+
+build:
+  buildStats:
+    enable: true
+
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target: assets/js/bootstrap.bundle.min.js
